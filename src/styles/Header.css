@@ -1,0 +1,5 @@
+.container {
+    /* background-color: var(--header-color); */
+    background-color: blueviolet;
+    height: 10vh;
+}
