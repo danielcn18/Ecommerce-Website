@@ -1,5 +1,9 @@
 .container {
     /* background-color: var(--header-color); */
     background-color: blueviolet;
-    height: 10vh;
+    height: 6vh;
+    width: 'fit-content';
+    padding: 2rem;
+    display: flex;
+    align-items: center;
 }
