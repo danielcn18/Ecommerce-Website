@@ -1,9 +1,18 @@
-.container {
+.header {
     /* background-color: var(--header-color); */
-    background-color: blueviolet;
+    background-color: #09BC8A   ;
     height: 6vh;
     width: 'fit-content';
-    padding: 2rem;
+    padding: 2rem 3rem;
     display: flex;
     align-items: center;
+    margin: 0;
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+    column-gap: 2rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+.header > li > img {
+    height: 6vh;
 }
