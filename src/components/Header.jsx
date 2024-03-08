@@ -1,36 +1,42 @@
-import '../styles/Header.css'; // Error here with path
+import '../styles/Header.css'; 
+import '../global.css';
 import logo from '../../public/logo_example.png'
-// import '../global';
+import { FaShoppingCart, FaSearch } from "react-icons/fa";
+import { TiArrowSortedDown } from "react-icons/ti";    
 
 export default function Header() {
     
     return (
-        <ul className='header'>
-            <li>
-                <img src={logo} />
-            </li>
-            <li>
-                <p>Heading</p>
-            </li>
-            <li>
-                <p>Shop</p>
-            </li>
-            <li>
-                <p>Calculate Costs</p>
-            </li>
-            <li>
-                <p>Contact Us</p>
-            </li>
-            <li>
-                <p>Log In</p> {/* Log In / Username */}
-                <img alt='login_icon' />
-            </li>
-            <li>
-                <img alt='search_icon' /> {/* search bar */}
-            </li>
-            <li>
-                <img alt='shop_icon' /> {/* shopping cart */}
-            </li>
-        </ul>
+        <nav className='header'>
+            <div>
+                <a href=''>
+                    <img src={logo} alt="logo" />
+                </a>
+                <a href=''>
+                    <p>Heading</p>
+                </a>
+                <a href=''>
+                    <p>Shop</p>
+                </a>
+                <a href=''>
+                    <p>Calculate</p>
+                </a>
+                <a href=''>
+                    <p>Contact Us</p>
+                </a>
+            </div>
+            <div>
+                <a href=''>
+                    <p>Log In</p> {/* Log In / Username */}
+                    <TiArrowSortedDown />
+                </a>
+                <a href=''>
+                    <FaSearch /> {/* search bar */}
+                </a>
+                <a href=''>
+                    <FaShoppingCart /> {/* shopping cart */}
+                </a>
+            </div>
+        </nav>
     )    
 }   

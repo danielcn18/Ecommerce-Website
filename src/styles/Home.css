@@ -1,0 +1,44 @@
+.main-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.full-length-crop {
+    width: calc(100% - 4rem);   
+    height: 40vh;
+    margin: 0 4rem;
+    background-color: #D8DEF6;
+    border-radius: 0.3rem;
+}
+.full-length-crop > div {
+    display: grid;
+    grid-template-columns:50%/50%;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+}
+.full-length-crop > div > p {
+    margin: 0;
+    grid-column: 2;
+}
+
+.full-length-crop.right > div {
+
+}
+.full-length-crop.right > div > p {
+
+}
+.full-length-crop.right > div > button {
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.full-length-crop > div > img {
+    height: auto;
+}
+
+.full-length-crop.left > div {
+
+}
