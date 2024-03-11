@@ -2,3 +2,7 @@
   --navbar-bg-color: #09BC8A;
   --color: black; 
 }
+
+body {
+  font-family: Arial, sans-serif;
+}

@@ -5,8 +5,7 @@
     padding: 1.8rem 6rem;
     display: flex;
     flex-wrap: nowrap;
-    font-family: Arial, sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: var(--color);
 }
@@ -28,7 +27,7 @@
     color: inherit;
 }
 .header > div > a > img {
-    height: 3rem;
+    height: 1.9rem;
 }
 .header > div > a > p  {
     margin: 0;
