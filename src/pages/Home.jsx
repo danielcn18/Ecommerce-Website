@@ -16,18 +16,18 @@ export default function Home() {
             <div className='half-length-crop'>
                 <img className='image-crop half' /* src={stockimage1} */ alt='photo' />
                 <div className='half-length-inner'>
-                    <p>Build A Life Long<br />Relationship With A Friend</p>
-                    <button>Discover</button>
+                    <p>More Outfits,<br />More Fun</p>
+                    <button>Shop Pet Clothes</button>
                 </div>
             </div>
             <div className='half-length-crop'>
-                <img className='image-crop half' /* src={stockimage1} */ alt='photo' />
+                <img className='image-crop half' alt='photo' />
                 <div className='half-length-inner'>
-                    <p>Build A Life Long<br />Relationship With A Friend</p>
-                    <button>Discover</button>
+                    <p>Lorem ipsum dolor<br />sit amet</p>
+                    <button>Shop Lorem</button>
                 </div>
             </div>
             
         </div>
     )
-}
+}   

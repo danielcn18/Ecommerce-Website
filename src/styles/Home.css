@@ -10,10 +10,10 @@
 }
 .full-length-crop {
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     display: grid;
     border-radius: 0.3rem;
-    background-color: powderblue;
+    background-color: #D8DEF6;
 }
 .full-length-crop.right,
 .full-length-crop.left {
@@ -57,21 +57,21 @@
 .full-length-crop > div > button {
     font-size: 1.2rem;
     border: 0;
-    background-color: #6F6868;
-    color: white;
     width: auto;
     height: auto;
     padding: 0.2rem 0.8rem;
     border-radius: 0.2rem;
+    background-color: #6F6868;
+    color: white;
 }
 .half-length-crop {
     width: calc(50% - 1rem);
-    height: 25vh;
+    height: 30vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     border-radius: 0.3rem;
-    background-color: powderblue;
+    background-color: #ECE5E5;
 }
 .half-length-crop > img {
     height: inherit;
@@ -101,10 +101,22 @@
 .half-length-inner > button {
     font-size: 1.2rem;
     border: 0;
-    background-color: #6F6868;
-    color: white;
     width: auto;
     height: auto;
-    padding: 0.2rem 0.8rem;
-    border-radius: 0.2rem;
+    padding: 0.2rem 1.1rem;
+    border-radius: 2rem;
+    background-color: white;
+    color: black;
+}
+.full-length-crop > div > button,
+.half-length-inner > button {
+    transition: 
+        opacity 0.4s,
+        transform 1s;
+    opacity: 1;
+}
+.full-length-crop > div > button:hover,
+.half-length-inner > button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
 }
