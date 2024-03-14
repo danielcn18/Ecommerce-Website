@@ -40,12 +40,7 @@
     border-radius: inherit;
     width: 100%;
     grid-row: 1;
-}
-.image-crop.full {
-    grid-column: 1 / 3;
-}
-.image-crop.half {
-    grid-column: 1/2;
+    grid-column: 1;
 }
 .full-length-crop > div > p {
     width: auto;
@@ -108,15 +103,68 @@
     background-color: white;
     color: black;
 }
-.full-length-crop > div > button,
-.half-length-inner > button {
+.quarter-length-crop {
+    width: calc(25% - 3rem);
+    /* min-width: none; */
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 0.3rem;
+    background-color: #D9EBFC;
+}
+.quarter-length-crop > img {
+    height: inherit;
+    width: 100%;
+    border-radius: inherit;
+    z-index: -1;
+}   
+.quarter-length-inner {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+}
+.quarter-length-inner > p {
+    margin: 0;
+    width: 100%;
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+}
+.quarter-length-inner > button {
+    font-size: 1.2rem;
+    border: 0;
+    width: auto;
+    height: auto;
+    padding: 0.2rem 1.1rem;
+    border-radius: 2rem;
+    background-color: white;
+    color: black;
+}
+.image-crop.full {
+    grid-column: 1/3;
+}
+.image-crop.half {
+    grid-column: 1/2;
+}
+.full-length-inner > button,
+.half-length-inner > button,
+.quarter-length-inner > button {
     transition: 
         opacity 0.4s,
         transform 1s;
     opacity: 1;
 }
-.full-length-crop > div > button:hover,
-.half-length-inner > button:hover {
+.full-length-inner > button:hover,
+.half-length-inner > button:hover,
+.quarter-length-inner > button:hover {
     opacity: 0.9;
     transform: scale(1.05);
 }

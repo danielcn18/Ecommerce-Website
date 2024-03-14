@@ -27,7 +27,34 @@ export default function Home() {
                     <button>Shop Lorem</button>
                 </div>
             </div>
-            
+            <div className='quarter-length-crop'>
+                <img className='image-crop quarter' alt='photo' />
+                <div className='quarter-length-inner'>
+                    <p>Lorem ipsum dolor<br />sit amet</p>
+                    <button>Shop Lorem</button>
+                </div>
+            </div>
+            <div className='quarter-length-crop'>
+                <img className='image-crop quarter' alt='photo' />
+                <div className='quarter-length-inner'>
+                    <p>Lorem ipsum dolor<br />sit amet</p>
+                    <button>Shop Lorem</button>
+                </div>
+            </div>
+            <div className='quarter-length-crop'>
+                <img className='image-crop quarter' alt='photo' />
+                <div className='quarter-length-inner'>
+                    <p>Lorem ipsum dolor<br />sit amet</p>
+                    <button>Shop Lorem</button>
+                </div>
+            </div>
+            <div className='quarter-length-crop'>
+                <img className='image-crop quarter' alt='photo' />
+                <div className='quarter-length-inner'>
+                    <p>Lorem ipsum dolor<br />sit amet</p>
+                    <button>Shop Lorem</button>
+                </div>
+            </div>      
         </div>
     )
 }   
