@@ -45,7 +45,6 @@
 .full-length-crop > div > p {
     width: auto;
     font-size: 1.6rem;
-    color: black;
     margin: 0;
     text-align: center;
 }
@@ -90,7 +89,6 @@
     margin: 0;
     width: 100%;
     font-size: 1.6rem;
-    color: black;
     text-align: center;
 }
 .half-length-inner > button {
@@ -136,8 +134,8 @@
     margin: 0;
     width: 100%;
     font-size: 1.4rem;
-    color: black;
     text-align: center;
+    color: black;
 }
 .quarter-length-inner > button {
     font-size: 1.2rem;
@@ -176,7 +174,10 @@
 .quarter-length-crop:hover {
     transform: scale(1.01);
 }
-
+.full-length-crop > div > p,
+.half-length-crop > div > p {
+    color: white; /* black */
+}
 .loginSuggestion {
     height: auto;
     width: 100%;
