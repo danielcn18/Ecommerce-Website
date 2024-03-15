@@ -72,7 +72,7 @@
     height: inherit;
     width: 100%;
     border-radius: inherit;
-    z-index: -1;
+    /* z-index: -1; */
 }   
 .half-length-inner {
     height: auto;
@@ -151,9 +151,11 @@
 }
 .image-crop.full {
     grid-column: 1/3;
+    object-fit: cover;
 }
 .image-crop.half {
     grid-column: 1/2;
+    object-fit: cover;
 }
 .full-length-inner > button,
 .half-length-inner > button,
@@ -173,4 +175,37 @@
 }
 .quarter-length-crop:hover {
     transform: scale(1.01);
+}
+
+.loginSuggestion {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.6rem;
+    text-align: center;
+}
+.loginSuggestion > p {
+    color: black;
+    font-size: 1rem;
+    margin: 0;
+}
+.loginSuggestion > a > button {
+    width: max-content;
+    color: white;
+    background-color: #A19BC8;
+    border-radius: 0.6rem;
+    border: 0px transparent;
+    padding: 0.3rem 1.5rem;
+    font-size: 1.2rem;
+}
+.loginSuggestion > p:first-child {
+    font-size: 1.2rem; 
+}
+.loginSuggestion > p > a > span {
+    color: #0066FF;
+}
+.loginSuggestion > p > a > span:hover {
+    cursor: pointer;
 }
