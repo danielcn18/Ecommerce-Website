@@ -106,6 +106,7 @@
 .quarter-length-crop {
     width: calc(25% - 3rem);
     /* min-width: none; */
+    text-decoration: none;
     height: 30vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -162,9 +163,14 @@
         transform 1s;
     opacity: 1;
 }
+.quarter-length-crop {
+    transition: 1s;
+}
 .full-length-inner > button:hover,
 .half-length-inner > button:hover,
 .quarter-length-inner > button:hover {
-    opacity: 0.9;
     transform: scale(1.05);
+}
+.quarter-length-crop:hover {
+    transform: scale(1.01);
 }

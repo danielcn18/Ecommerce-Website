@@ -27,34 +27,26 @@ export default function Home() {
                     <button>Shop Lorem</button>
                 </div>
             </div>
-            <div className='quarter-length-crop'>
-                <img className='image-crop quarter' alt='photo' />
+            <a href='https://blog.hubspot.com/website/center-div-css' className='quarter-length-crop'>
                 <div className='quarter-length-inner'>
                     <p>Lorem ipsum dolor<br />sit amet</p>
-                    <button>Shop Lorem</button>
                 </div>
-            </div>
-            <div className='quarter-length-crop'>
-                <img className='image-crop quarter' alt='photo' />
+            </a>
+            <a href='https://blog.hubspot.com/website/center-div-css' className='quarter-length-crop'>
                 <div className='quarter-length-inner'>
                     <p>Lorem ipsum dolor<br />sit amet</p>
-                    <button>Shop Lorem</button>
                 </div>
-            </div>
-            <div className='quarter-length-crop'>
-                <img className='image-crop quarter' alt='photo' />
+            </a>
+            <a href='https://blog.hubspot.com/website/center-div-css' className='quarter-length-crop'>
                 <div className='quarter-length-inner'>
                     <p>Lorem ipsum dolor<br />sit amet</p>
-                    <button>Shop Lorem</button>
                 </div>
-            </div>
-            <div className='quarter-length-crop'>
-                <img className='image-crop quarter' alt='photo' />
+            </a>
+            <a href='https://blog.hubspot.com/website/center-div-css' className='quarter-length-crop'>
                 <div className='quarter-length-inner'>
                     <p>Lorem ipsum dolor<br />sit amet</p>
-                    <button>Shop Lorem</button>
                 </div>
-            </div>      
+            </a>   
         </div>
     )
 }   
