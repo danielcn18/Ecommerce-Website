@@ -22,7 +22,7 @@ export default function Home() {
             <div className='half-length-crop'>
                 <img className='image-crop half' src={stockimage4} alt='photo' />
                 <div className='half-length-inner'>
-                    <p style={{color: 'black'}}>More Outfits,<br />More Fun</p>
+                    <p>More Outfits,<br />More Fun</p>
                     <button>Shop Pet Clothes</button>
                 </div>
             </div>
