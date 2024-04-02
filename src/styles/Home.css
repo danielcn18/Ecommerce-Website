@@ -1,4 +1,44 @@
-.main-container {
+.container {
+    height: 101vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0) 100%); */
+    z-index: 1;
+}
+.container > img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    background-color: lightslategray;
+    position: absolute;
+}
+.container > img.fade{
+    z-index: -1;
+}
+.container > p {
+    width: 20rem;
+    font-size: 3.6rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+    text-align: right;
+    top: 10vh;
+    right: 7.5%;
+    position: relative;
+    margin: 0;  
+    z-index: 2;
+}
+
+/* .main-container {
     height: auto;
     width: 85%;
     display: flex;
@@ -71,7 +111,6 @@
     height: inherit;
     width: 100%;
     border-radius: inherit;
-    /* z-index: -1; */
 }   
 .half-length-inner {
     height: auto;
@@ -103,7 +142,6 @@
 }
 .quarter-length-crop {
     width: calc(25% - 3rem);
-    /* min-width: none; */
     text-decoration: none;
     height: 30vh;
     display: grid;
@@ -176,7 +214,7 @@
 }
 .full-length-crop > div > p,
 .half-length-crop > div > p {
-    color: white; /* black */
+    color: white; 
 }
 .loginSuggestion {
     height: auto;
@@ -209,4 +247,4 @@
 }
 .loginSuggestion > p > a > span:hover {
     cursor: pointer;
-}
+} */

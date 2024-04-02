@@ -1,4 +1,11 @@
-.header {
+.container {
+    height: 5vh;
+    width: 100%;
+    background-color: gray;
+    position: absolute;
+}
+
+/* .header {
     background-color: var(--navbar-bg-color);
     height: auto;
     width: 'fit-content';
@@ -6,7 +13,6 @@
     display: flex;
     flex-wrap: nowrap;
     font-size: 1.6rem;
-    /* font-weight: 600; */
     color: var(--color);
 }
 .header > div {
@@ -31,4 +37,4 @@
 }
 .header > div > a > p  {
     margin: 0;
-}
+} */

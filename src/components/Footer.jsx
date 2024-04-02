@@ -1,4 +1,4 @@
-import '../styles/Footer.css'; 
+/* import '../styles/Footer.css'; 
 import '../global.css';
 import { MdFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
@@ -11,7 +11,7 @@ export default function Footer() {
         <>
             <div className='upper-container'>
                 <div className='title'>
-                    <Link text="Shop By Category" connect="" />
+                    <Link text="Shop By Category" connect="" /> 
                 </div>
             </div>
             <div className='lower-container'>
@@ -29,4 +29,4 @@ export default function Footer() {
             </div>
         </>
     )
-} 
+}  */
