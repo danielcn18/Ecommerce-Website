@@ -1,8 +1,11 @@
-.container {
-    height: 5vh;
-    width: 100%;
-    background-color: gray;
+.header {
+    height: 10vh;
+    width: 90%;
+    /* display: flex; */
+    /* margin: auto; */
     position: absolute;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 /* .header {

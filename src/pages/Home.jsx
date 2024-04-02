@@ -5,7 +5,7 @@ export default function Home() {
 
     return (
         <>
-            <article className="container">
+            <article className="home">
                 <img src={backgroundImage1} className="fade" />
                 <p>Build A Life Long Relationship With A Friend</p>
             </article>
@@ -28,7 +28,7 @@ export default function Home() {
 //     const isLogin = false;
 
 //     return(
-//         <div className='main-container'>
+//         <div className='main-home'>
 //             <div className='full-length-crop right'>
 //                 <img className='image-crop full' src={stockimage2} alt='photo' />
 //                 <div className='full-length-inner right-child'>
