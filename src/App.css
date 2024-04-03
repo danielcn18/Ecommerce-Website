@@ -1,7 +1,7 @@
 body {
     height: max-content;
-    height: 200vh;
+    height: 400vh;
     margin: 0;
-    background-color: #333333;
+    background-color: #879a83d6;
     background: linear-gradient(45deg, #ffffff, #879a83);
 }
