@@ -1,13 +1,13 @@
 import './App.css'
 import Home from './pages/Home';
-import Header from './components/Header';
+// import Header from './components/Header';
 // import Footer from './components/Footer';
 
 export default function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Home />
       {/* <Footer /> */}
       {/* <Routes>

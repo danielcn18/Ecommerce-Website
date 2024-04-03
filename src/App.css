@@ -1,5 +1,7 @@
 body {
+    height: max-content;
+    height: 200vh;
     margin: 0;
-    /* background-color: #E5F9F3; */
-    background-color: white;
+    background-color: #333333;
+    background: linear-gradient(45deg, #ffffff, #879a83);
 }

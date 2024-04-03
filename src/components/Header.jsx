@@ -7,11 +7,12 @@ import { TiArrowSortedDown } from "react-icons/ti";
 export default function Header() {
     
     return (
-        <>
-            <div className="header">
+        <div className='header-container'>
+            {/* <div className='header-inner'>
+            
+            </div> */}
+        </div>
 
-            </div>
-        </>
         // <nav className='header'>
         //     <div>
         //         <a href=''>

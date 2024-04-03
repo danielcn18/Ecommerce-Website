@@ -1,12 +1,28 @@
-.header {
-    height: 10vh;
-    width: 90%;
-    /* display: flex; */
-    /* margin: auto; */
-    position: absolute;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+.header-container {
+    height: 4vh;
+    width: 40%;
+    margin: 0 30%;
+    position: sticky;
+    top: 1rem;
+    background-color: rgb(124, 205, 37);
 }
+/* .header-container {
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.header-inner {
+    width: 80%;
+    height: inherit;
+    border-bottom-right-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    position: relative;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+} */
 
 /* .header {
     background-color: var(--navbar-bg-color);

@@ -1,15 +1,16 @@
 import '../styles/Home.css';
 import backgroundImage1 from '../../public/backgroundImage1.jpg';
+import Header from '../components/Header.jsx';
 
 export default function Home() {
 
     return (
         <>
             <article className="home">
-                <img src={backgroundImage1} className="fade" />
+                <img src={backgroundImage1} />
                 <p>Build A Life Long Relationship With A Friend</p>
             </article>
-            
+            {/* <Header /> */}
         </>
     );
 }
