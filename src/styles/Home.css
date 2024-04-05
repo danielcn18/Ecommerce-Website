@@ -1,7 +1,6 @@
 .full-view {
     height: 80vh;
     width: 100%;
-    margin: 0 0 40vh 0;
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -12,12 +11,12 @@
     width: inherit;
     object-fit: cover;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
 }
 .full-view > p {
     height: fit-content;
     width: 20rem;
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     color: var(--secondary-color);
     font-weight: 500;
     text-align: right;
@@ -29,35 +28,29 @@
 }
 .middle-view {
     height: auto;
-    min-width: 40rem;
+    min-width: 55rem;
     width: 60%; 
+    padding: 1rem;
+}
+.middle-view,
+.shadow {
     display: flex;
     background-color: white;
     position: absolute;
-    top: 70vh;
+    /* top: 70vh; */
     border-radius: 1rem;
-    padding: 1rem;
     transform: translate(-50%, 0); 
     left: 50%;
-    z-index: 2;
 }
-/*
-.middle-view::before {
-    content: "";
+.shadow{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
     border-radius: 1rem;
-    z-index: -10;
-    box-shadow: 0 0 1rem 10px rgba(0, 0, 0);
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.355);
-}   
-*/        
+    box-shadow: 0 0 5rem 0.1rem rgba(0, 0, 0, 0.5);
+    z-index: -4;
+}       
 .middle-view > p {
     color: #664E4C;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0;
     text-align: center;
 }
@@ -111,17 +104,55 @@
     border: 0px solid transparent;
     font-size: 1.2rem;
     padding: 0.1rem 0.75rem;
-    transition: 2s transform ease-in-out;
+    transition: 2s transform ease-out;
 }
 .half-view > button:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
-.shadow{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0rem;
-    left:0;
-    border-radius: 1rem;
-    z-index: -10;
+
+
+@media only screen and (max-width: 1200px) {
+    .full-view > p {
+        font-size: 3.5rem;
+    }
+    .middle-view {
+        min-width: 40rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .middle-view {
+        min-width: 30rem;
+    }
+    .middle-view > p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .full-view {
+        height: 70vh;
+        justify-content: center;
+    }
+    .full-view > p {
+        width: 50%;
+        font-size: 3.4rem;
+        text-align: center;
+        right: 0;
+    }
+    .middle-view {
+        min-width: 20rem;
+    }
+    .middle-view > p {
+        font-size: 1rem;
+    }
+    .middle-view, .shadow {
+        top: 60vh;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .full-view > p {
+        width: 70%;
+        font-size: 2.6rem;
+    }
 }
