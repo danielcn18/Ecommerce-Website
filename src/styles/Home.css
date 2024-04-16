@@ -28,7 +28,7 @@
 }
 .middle-view {
     height: auto;
-    min-width: 55rem;
+    /* min-width: 55rem; */
     width: 60%; 
     padding: 1rem;
 }
@@ -104,17 +104,12 @@
     border: 0px solid transparent;
     font-size: 1.2rem;
     padding: 0.1rem 0.75rem;
-<<<<<<< HEAD
-    transition: 2s transform ease-out;
-=======
     transition: 1s transform ease-out;
->>>>>>> 589638808fc0ff75f0780bcd97b8ec0583e0cf16
 }
 .half-view > button:hover {
     transform: scale(1.025);
 }
 
-<<<<<<< HEAD
 
 @media only screen and (max-width: 1200px) {
     .full-view > p {
@@ -141,15 +136,15 @@
     }
     .full-view > p {
         width: 50%;
-        font-size: 3.4rem;
+        font-size: 3.2rem;
         text-align: center;
         right: 0;
     }
     .middle-view {
-        min-width: 20rem;
+        min-width: 28rem;
     }
     .middle-view > p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .middle-view, .shadow {
         top: 60vh;
@@ -158,16 +153,13 @@
 @media only screen and (max-width: 600px) {
     .full-view > p {
         width: 70%;
-        font-size: 2.6rem;
+        font-size: 2.8rem;
+        top: 15vh;
     }
-=======
-.shadow{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0rem;
-    left:0;
-    /* border-radius: inherit; */
-    z-index: -10;
->>>>>>> 589638808fc0ff75f0780bcd97b8ec0583e0cf16
+    .middle-view {
+        min-width: 18rem;
+    }
+    .middle-view > p {
+        font-size: 0.7rem;
+    }
 }
