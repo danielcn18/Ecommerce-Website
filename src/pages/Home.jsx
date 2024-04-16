@@ -2,6 +2,7 @@ import '../styles/Home.css';
 import { useRef, useEffect, useState } from 'react';
 import backgroundImage1 from '../../public/backgroundImage1.jpg';
 import Header from '../components/Header.jsx';
+import HalfView from '../components/HalfView';
 
 export default function Home() {
 
@@ -67,46 +68,46 @@ export default function Home() {
             */}
 
             <article className="views-container">
-            <div className="half-view">
-                    <p>Pet Food & Treats</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>Pet Supplies</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>Pet Toys</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>Pet Clothing & Accessories</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>Health and Wellness Products</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>Pet Travel & Safety</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>Pet Beds & Furniture</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>Training and Behavior [Courses]</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>Specialty and Niche Products</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>Subscription Services</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
+                <HalfView 
+                    text="Pet Food & Treats" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="Pet Supplies" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="Pet Toys" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="Pet Clothing & Accessories" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="Health & Wellness Products" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="Pet Travel & Safety" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="Pet Beds & Furniture" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="Training and Behavior [Courses]" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="Specialty and Niche Products" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="Subscription Services" 
+                    bText="Shop Pet Clothes" 
+                />
                 {/* <div className="half-view">
                     <p>For those lazy days and playful moments [Summer season related]</p>
                     <button>Shop Pet Clothes</button>
