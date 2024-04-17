@@ -30,6 +30,7 @@
 
 .middle-view {
     height: auto;
+    /* min-width: 55rem; */
     width: 60%; 
     padding: 1rem;
 }
@@ -69,7 +70,7 @@
 }
 
 
-.half-view {
+.card {
     height: 25vh;
     width: 20rem;
     background-color: rgba(0, 0, 0, 0.05); /* transparent; */
@@ -84,10 +85,10 @@
     align-items: center;
     row-gap: 1rem;
 }
-.half-view:hover {
+.card:hover {
     background-color: rgba(255, 255, 255, 0.0);
 }
-.half-view::before {
+.card::before {
     content: '';
     top: -0.5rem;
     left: -0.5rem;
@@ -101,15 +102,15 @@
     background-clip: padding-box, border-box;
 }
 
-.half-view:hover::before {
+.card:hover::before {
     background-color: #56756896;
 }
 
-.half-view:not(:hover)::before{
+.card:not(:hover)::before{
     box-shadow: 0 0 1px #567568;
 }
 
-.half-view > p {
+.card > p {
     font-size: 1.7rem;
     color: #FFFFF2;
     margin: 0;
@@ -117,7 +118,7 @@
     white-space: pre-line;
     text-shadow: 2px 2px #567568;
 }
-.half-view > button {
+.card > button {
     color: #567568;
     background-color: #FFFFF2;
     border-radius: 2rem;
@@ -126,7 +127,7 @@
     padding: 0.1rem 0.75rem;
     transition: 1s transform ease-out;
 }
-.half-view > button:hover {
+.card > button:hover {
     transform: scale(1.025);
 }
 
