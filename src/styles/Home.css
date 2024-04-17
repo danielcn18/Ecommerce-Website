@@ -110,6 +110,7 @@
     box-shadow: 0 0 1px #567568;
 }
 
+
 .card > p {
     font-size: 1.7rem;
     color: #FFFFF2;
@@ -118,6 +119,7 @@
     white-space: pre-line;
     text-shadow: 2px 2px #567568;
 }
+
 .card > button {
     color: #567568;
     background-color: #FFFFF2;
@@ -125,10 +127,19 @@
     border: 0px solid transparent;
     font-size: 1.2rem;
     padding: 0.1rem 0.75rem;
-    transition: 1s transform ease-out;
 }
-.card > button:hover {
-    transform: scale(1.025);
+.card:hover > button {
+    transform: scale(1.05);
+}
+
+.card:hover > p {
+    /* margin-bottom: 1rem; */
+    /* position: absolue; */ /* make parent element position: relative; */
+}
+
+.card > p, 
+.card > button {
+    transition: 750ms transform ease-out;
 }
 
 
