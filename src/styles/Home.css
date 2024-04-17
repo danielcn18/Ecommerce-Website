@@ -30,7 +30,6 @@
 
 .middle-view {
     height: auto;
-    /* min-width: 55rem; */
     width: 60%; 
     padding: 1rem;
 }
@@ -39,7 +38,6 @@
     display: flex;
     background-color: white;
     position: absolute;
-    /* top: 70vh; */
     border-radius: 1rem;
     transform: translate(-50%, 0); 
     left: 50%;
@@ -74,7 +72,7 @@
 .half-view {
     height: 25vh;
     width: 20rem;
-    background-color: rgba(0, 0, 0, 0.02); /* transparent; */
+    background-color: rgba(0, 0, 0, 0.05); /* transparent; */
     transition: 750ms;
     border-radius: 0.5rem;
     border-image-slice: 1;
@@ -87,7 +85,7 @@
     row-gap: 1rem;
 }
 .half-view:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.0);
 }
 .half-view::before {
     content: '';
@@ -98,9 +96,19 @@
     position: absolute;
     z-index: -2;
     border-radius: 0.5rem; 
-    box-shadow: 0 0 0 2px #FFFFF2;
+    box-shadow: 0 0 1px 0.1rem #59a082;
+    transition: 750ms;
     background-clip: padding-box, border-box;
 }
+
+.half-view:hover::before {
+    background-color: #56756896;
+}
+
+.half-view:not(:hover)::before{
+    box-shadow: 0 0 1px #567568;
+}
+
 .half-view > p {
     font-size: 1.7rem;
     color: #FFFFF2;
