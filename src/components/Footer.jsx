@@ -9,7 +9,20 @@ export default function Footer() {
 
     return(  
         <footer>
-            <div className='upper-container'>
+            <div className='column'>
+                <p>Shop By Category</p>
+                <p>Clearance</p>
+                <p>Lorem</p>
+            </div>
+            <div className='column'>
+                <p>About</p>
+                <p>Contact Us</p>
+                <p>FAQ</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+
+            {/* <div className='upper-container'>
                 <div className='title'>
                     <Link text="Shop By Category" connect="" /> 
                 </div>
@@ -26,7 +39,7 @@ export default function Footer() {
                     <FaYoutube />
                 </a>
                 <p>Social Media Directory</p>
-            </div>
+            </div> */}
         </footer>
     )
 } 
