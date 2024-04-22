@@ -1,7 +1,8 @@
 body {
-    height: max-content;
-    height: 400vh;
+    height: auto;
     margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 0vh;
     background-color: #879a83d6;
     background: linear-gradient(45deg, #bbcbb8, #879a83); 
 }

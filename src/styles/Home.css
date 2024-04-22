@@ -1,5 +1,5 @@
 .full-view {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -26,7 +26,6 @@
     margin: 0;  
     z-index: 2;
 }
-
 
 .middle-view {
     height: auto;
@@ -64,7 +63,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 8vh 0;
     column-gap: 3rem;
     row-gap: 3rem;
 }
@@ -115,7 +113,7 @@
     font-size: 1.7rem;
     color: #FFFFF2;
     margin: 0;
-    min-width: 90%;
+    width: 90%;
     white-space: pre-line;
     text-shadow: 2px 2px #567568;
 }
@@ -182,6 +180,9 @@
     }
     .middle-view, .shadow {
         top: 60vh;
+    }
+    .views-container {
+        padding-top: 10vh;
     }
 }
 

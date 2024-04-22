@@ -1,4 +1,4 @@
-/* import '../styles/Footer.css'; 
+import '../styles/Footer.css'; 
 import '../global.css';
 import { MdFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
@@ -8,7 +8,7 @@ import Link from './Link';
 export default function Footer() {
 
     return(  
-        <>
+        <footer>
             <div className='upper-container'>
                 <div className='title'>
                     <Link text="Shop By Category" connect="" /> 
@@ -27,6 +27,6 @@ export default function Footer() {
                 </a>
                 <p>Social Media Directory</p>
             </div>
-        </>
+        </footer>
     )
-}  */
+} 

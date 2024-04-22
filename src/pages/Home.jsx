@@ -35,14 +35,14 @@ export default function Home() {
             shadowRef.current.style.height = `${middleViewHeight}px`;
             
             // Update margin of freeSpace
-            freeSpaceRef.current.style.margin = `0 0 ${middleViewHeight}px 0`;
+            freeSpaceRef.current.style.margin = `0 0 calc(${middleViewHeight}px - 12vh) 0`;
 
             // Determine top position based on screen width
             let topOffset;
             if (windowWidth <= 780) {
-                topOffset = `calc(${fullviewHeight}px - 10vh)`;
+                topOffset = `calc(${fullviewHeight}px - 12vh)`;
             } else {
-                topOffset = `calc(${fullviewHeight}px - 10vh)`;
+                topOffset = `calc(${fullviewHeight}px - 25vh)`;
             }
             
             // Apply top offset to middleView and shadow
@@ -108,18 +108,14 @@ export default function Home() {
                     text="Subscription Services" 
                     bText="Shop Pet Clothes" 
                 />
-                {/* <div className="half-view">
-                    <p>For those lazy days and playful moments [Summer season related]</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>More Outfits, More Fun</p>
-                    <button>Shop Pet Clothes</button>
-                </div>
-                <div className="half-view">
-                    <p>For those lazy days and playful moments [Summer season related]</p>
-                    <button>Shop Pet Clothes</button>
-                </div> */}
+                <HalfView 
+                    text="For those lazy days and playful moments [Summer season related]" 
+                    bText="Shop Pet Clothes" 
+                />
+                <HalfView 
+                    text="More Outfits, More Fun" 
+                    bText="Shop Pet Clothes" 
+                /> 
             </article>
         </>
     );
