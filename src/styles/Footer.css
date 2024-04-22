@@ -18,6 +18,7 @@ footer {
 }
 .column > p:first-child {
     font-weight: 600;
+    color: var(--secondary-color);
     
 }
 .column > p {
@@ -25,15 +26,19 @@ footer {
     margin: 0;
     height: auto;
     position: relative;
+    color: var(--color);
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .column > p:first-child:before {
     bottom: -4px;
-    width: 80%;
-    background-color: white;
+    width: 90%;
+    background-color: var(--secondary-color);
+    background: linear-gradient(to right, var(--secondary-color) 70%, transparent);
     content: "";
     position: absolute;
-    height: 4px;
+    height: 2px;
     display: block;
     left: 0;
     border-bottom-right-radius: 1rem;
