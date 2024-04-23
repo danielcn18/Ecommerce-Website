@@ -3,6 +3,7 @@
   --color: black; 
   --primary-color: black;
   --secondary-color: white;
+  --footer-color: rgb(88, 123, 113); /* rgb(123, 121, 88) */
 }
 
 button {

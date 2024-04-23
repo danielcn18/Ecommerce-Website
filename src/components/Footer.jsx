@@ -10,12 +10,20 @@ export default function Footer() {
     return(  
         <footer>
             <div className='column'>
-                <p>Shop By Category</p>
+                <p>[Title]</p>
+            </div>
+            <div className='column'>
+                <p>Shop</p>
                 <p>Clearance</p>
-                <p>Lorem</p>
+                <p>Gift Cards</p>
+                <p>Store Locator</p>
             </div>
             <div className='column'>
                 <p>About</p>
+                <p>Careers</p>
+            </div>
+            <div className='column'>
+                <p>Help</p>
                 <p>Contact Us</p>
                 <p>FAQ</p>
                 <p>Privacy Policy</p>
